@@ -23,6 +23,6 @@ class Candidate:
                                      data=json.dumps(data) )
         return res_new_cand
 
-	def delete(self, del_cand):
+    def delete(self, del_cand):
         del_candid = requests.delete(url+r'/'+str(del_cand))
         return del_candid
